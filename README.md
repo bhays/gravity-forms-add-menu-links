@@ -3,7 +3,7 @@ Gravity Forms Add Menu Links Add-On
 
 Version 1.0
 
-Add admin bar links for forms when viewing posts or pages.
+Add Gravity Forms links to the admin bar
 
 ## Requirements
 * WordPress 3.5
