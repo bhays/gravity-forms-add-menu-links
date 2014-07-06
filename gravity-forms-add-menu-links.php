@@ -42,20 +42,21 @@ class GFAddMenuLinks {
 
 		if( current_user_can('manage_options') && !empty(self::$form_id) )
 		{
+			$admin_url = get_admin_url().'admin.php';
 			$menu_links = array(
 				array(
 					'id' => 'gfef_edit',
-					'href' => get_admin_url().'?page=gf_edit_forms&id='.self::$form_id,
+					'href' => $admin_url.'?page=gf_edit_forms&id='.self::$form_id,
 					'title' => 'Edit Form',
 				),
 				array(
 					'id' => 'gfef_entries',
-					'href' => get_admin_url().'?page=gf_entries&id='.self::$form_id,
+					'href' => $admin_url.'?page=gf_entries&id='.self::$form_id,
 					'title' => 'View Entries',
 				),
 				array(
 					'id' => 'gfef_settings',
-					'href' => get_admin_url().'?page=gf_edit_forms&view=settings&subview=settings&id='.self::$form_id,
+					'href' => $admin_url.'?page=gf_edit_forms&view=settings&subview=settings&id='.self::$form_id,
 					'title' => 'Edit Settings',
 				),
 			);
